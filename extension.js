@@ -16,11 +16,13 @@ export default class PrivacyIndicatorsAccentColor extends Extension {
   enable() {
     this._settings = this.getSettings();
 
+    // load initial values
     this._onPrivacyIndicatorsChanged();
     this._onScreenSharingIndicatorChanged();
     this._onScreenRecordingIndicatorChanged();
     this._onBlurChanged();
 
+    // register listeners
     this._onPrivacyIndicatorsChangedID = this._settings.connect(
       "changed::" + PRIVACY_INDICATORS,
       this._onPrivacyIndicatorsChanged.bind(this),
@@ -42,32 +44,32 @@ export default class PrivacyIndicatorsAccentColor extends Extension {
   disable() {
     this._settings = null;
 
+    // unregister listeners
     if (this._onPrivacyIndicatorsChangedID) {
       global.settings.disconnect(this._onPrivacyIndicatorsChangedID);
       this._onPrivacyIndicatorsChangedID = null;
     }
-
     if (this._onScreenSharingIndicatorChangedID) {
       global.settings.disconnect(this._onScreenSharingIndicatorChangedID);
       this._onScreenSharingIndicatorChangedID = null;
     }
-
     if (this._onScreenRecordingIndicatorChangedID) {
       global.settings.disconnect(this._onScreenRecordingIndicatorChangedID);
       this._onScreenRecordingIndicatorChangedID = null;
     }
-
     if (this._onBlurChangedID) {
       global.settings.disconnect(this._onBlurChangedID);
       this._onBlurChangedID = null;
     }
 
+    // remove classes
     this._updateClass(false, PRIVACY_INDICATORS_CLASS);
     this._updateClass(false, SCREEN_SHARING_INDICATOR_CLASS);
     this._updateClass(false, SCREEN_RECORDING_INDICATOR_CLASS);
     this._updateClass(false, BLUR_CLASS);
   }
 
+  // helper function to add or remove a class
   _updateClass(add, className) {
     if (add) {
       Main.layoutManager.uiGroup.add_style_class_name(className);
