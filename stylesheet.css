@@ -3,19 +3,23 @@
 }
 
 .screen-sharing-indicator-accent-color .screen-sharing-indicator {
+    color: -st-accent-fg-color;
     box-shadow: inset 0 0 0 100px -st-accent-color;
 }
 
 .screen-recording-indicator-accent-color .screen-recording-indicator {
+    color: -st-accent-fg-color;
     box-shadow: inset 0 0 0 100px -st-accent-color;
 }
 
 .screen-sharing-indicator-accent-color.screen-sharing-recording-indicators-blur
     .screen-sharing-indicator {
+    color: -st-accent-fg-color;
     box-shadow: inset 0 0 10px 1px -st-accent-color;
 }
 
 .screen-recording-indicator-accent-color.screen-sharing-recording-indicators-blur
     .screen-recording-indicator {
+    color: -st-accent-fg-color;
     box-shadow: inset 0 0 10px 1px -st-accent-color;
 }
