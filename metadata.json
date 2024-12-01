@@ -1,0 +1,6 @@
+{
+  "name": "Privacy Indicators Accent Color",
+  "description": "Apply the system accent color and some background blur to the privacy indicators (microphone, screen recording & sharing) in the top bar",
+  "uuid": "privacy-indicators-accent-color@sopht.li",
+  "shell-version": ["47"]
+}

@@ -1,0 +1,11 @@
+.privacy-indicator {
+    color: -st-accent-color;
+}
+
+.screen-sharing-indicator {
+    box-shadow: inset 0 0 15px 1px -st-accent-color;
+}
+
+.screen-recording-indicator {
+    box-shadow: inset 0 0 15px 1px -st-accent-color;
+}
