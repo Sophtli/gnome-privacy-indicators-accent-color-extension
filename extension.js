@@ -62,57 +62,42 @@ export default class PrivacyIndicatorsAccentColor extends Extension {
       this._onBlurChangedID = null;
     }
 
-    Main.layoutManager.uiGroup.remove_style_class_name(
-      PRIVACY_INDICATORS_CLASS,
-    );
-    Main.layoutManager.uiGroup.remove_style_class_name(
-      SCREEN_SHARING_INDICATOR_CLASS,
-    );
-    Main.layoutManager.uiGroup.remove_style_class_name(
-      SCREEN_RECORDING_INDICATOR_CLASS,
-    );
-    Main.layoutManager.uiGroup.remove_style_class_name(BLUR_CLASS);
+    this._updateClass(false, PRIVACY_INDICATORS_CLASS);
+    this._updateClass(false, SCREEN_SHARING_INDICATOR_CLASS);
+    this._updateClass(false, SCREEN_RECORDING_INDICATOR_CLASS);
+    this._updateClass(false, BLUR_CLASS);
+  }
+
+  _updateClass(add, className) {
+    if (add) {
+      Main.layoutManager.uiGroup.add_style_class_name(className);
+      return;
+    }
+    Main.layoutManager.uiGroup.remove_style_class_name(className);
   }
 
   _onPrivacyIndicatorsChanged() {
-    if (this._settings.get_boolean(PRIVACY_INDICATORS)) {
-      Main.layoutManager.uiGroup.add_style_class_name(PRIVACY_INDICATORS_CLASS);
-      return;
-    }
-    Main.layoutManager.uiGroup.remove_style_class_name(
+    this._updateClass(
+      this._settings.get_boolean(PRIVACY_INDICATORS),
       PRIVACY_INDICATORS_CLASS,
     );
   }
 
   _onScreenSharingIndicatorChanged() {
-    if (this._settings.get_boolean(SCREEN_SHARING_INDICATOR)) {
-      Main.layoutManager.uiGroup.add_style_class_name(
-        SCREEN_SHARING_INDICATOR_CLASS,
-      );
-      return;
-    }
-    Main.layoutManager.uiGroup.remove_style_class_name(
+    this._updateClass(
+      this._settings.get_boolean(SCREEN_SHARING_INDICATOR),
       SCREEN_SHARING_INDICATOR_CLASS,
     );
   }
 
   _onScreenRecordingIndicatorChanged() {
-    if (this._settings.get_boolean(SCREEN_RECORDING_INDICATOR)) {
-      Main.layoutManager.uiGroup.add_style_class_name(
-        SCREEN_SHARING_INDICATOR_CLASS,
-      );
-      return;
-    }
-    Main.layoutManager.uiGroup.remove_style_class_name(
-      SCREEN_SHARING_INDICATOR_CLASS,
+    this._updateClass(
+      this._settings.get_boolean(SCREEN_RECORDING_INDICATOR),
+      SCREEN_RECORDING_INDICATOR_CLASS,
     );
   }
 
   _onBlurChanged() {
-    if (this._settings.get_boolean(BLUR)) {
-      Main.layoutManager.uiGroup.add_style_class_name(BLUR_CLASS);
-      return;
-    }
-    Main.layoutManager.uiGroup.remove_style_class_name(BLUR_CLASS);
+    this._updateClass(this._settings.get_boolean(BLUR), BLUR_CLASS);
   }
 }
