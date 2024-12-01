@@ -35,7 +35,7 @@ export default class ExamplePreferences extends ExtensionPreferences {
     group.add(screenRecordingIndicatorRow);
 
     const blurRow = new Adw.SwitchRow({
-      title: "Privacy Indicators",
+      title: "Blur",
       subtitle:
         "Whether to apply blur to the screen sharing and recording indicators, this setting only works if the indicators are recolored",
     });
