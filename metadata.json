@@ -1,6 +1,9 @@
 {
   "name": "Privacy Indicators Accent Color",
-  "description": "Apply the system accent color and some background blur to the privacy indicators (microphone, screen recording & sharing) in the top bar",
+  "description": "Apply the system accent color to privacy indicators (e.g., microphone) and screen sharing/recording indicators, which also now have a blurred background, in the top bar",
+  "url": "https://github.com/Sophtli/gnome-privacy-indicators-accent-color-extension/",
   "uuid": "privacy-indicators-accent-color@sopht.li",
-  "shell-version": ["47"]
+  "settings-schema": "org.gnome.shell.extensions.privacy-indicators-accent-color",
+  "shell-version": ["47"],
+  "version": 1
 }

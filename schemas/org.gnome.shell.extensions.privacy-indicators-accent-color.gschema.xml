@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.privacy-indicators-accent-color" path="/org/gnome/shell/extensions/privacy-indicators-accent-color/">
+    <key name="privacy-indicators" type="b">
+      <default>true</default>
+    </key>
+    <key name="screen-sharing-indicator" type="b">
+      <default>true</default>
+    </key>
+    <key name="screen-recording-indicator" type="b">
+      <default>true</default>
+    </key>
+    <key name="blur" type="b">
+      <default>false</default>
+    </key>
+  </schema>
+</schemalist>
