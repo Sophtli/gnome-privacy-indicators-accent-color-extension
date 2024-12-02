@@ -42,23 +42,21 @@ export default class PrivacyIndicatorsAccentColor extends Extension {
   }
 
   disable() {
-    this._settings = null;
-
     // unregister listeners
     if (this._onPrivacyIndicatorsChangedID) {
-      global.settings.disconnect(this._onPrivacyIndicatorsChangedID);
+      this._settings.disconnect(this._onPrivacyIndicatorsChangedID);
       this._onPrivacyIndicatorsChangedID = null;
     }
     if (this._onScreenSharingIndicatorChangedID) {
-      global.settings.disconnect(this._onScreenSharingIndicatorChangedID);
+      this._settings.disconnect(this._onScreenSharingIndicatorChangedID);
       this._onScreenSharingIndicatorChangedID = null;
     }
     if (this._onScreenRecordingIndicatorChangedID) {
-      global.settings.disconnect(this._onScreenRecordingIndicatorChangedID);
+      this._settings.disconnect(this._onScreenRecordingIndicatorChangedID);
       this._onScreenRecordingIndicatorChangedID = null;
     }
     if (this._onBlurChangedID) {
-      global.settings.disconnect(this._onBlurChangedID);
+      this._settings.disconnect(this._onBlurChangedID);
       this._onBlurChangedID = null;
     }
 
@@ -67,6 +65,8 @@ export default class PrivacyIndicatorsAccentColor extends Extension {
     this._updateClass(false, SCREEN_SHARING_INDICATOR_CLASS);
     this._updateClass(false, SCREEN_RECORDING_INDICATOR_CLASS);
     this._updateClass(false, BLUR_CLASS);
+
+    this._settings = null;
   }
 
   // helper function to add or remove a class
