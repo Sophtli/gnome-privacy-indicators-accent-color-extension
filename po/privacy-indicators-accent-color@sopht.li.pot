@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR Sophtli
+# This file is distributed under the same license as the Privacy Indicators Accent Color package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Privacy Indicators Accent Color\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-11 23:45+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/prefs.js:15
+msgid "Appearance"
+msgstr ""
+
+#: src/prefs.js:20
+msgid "Privacy Indicators"
+msgstr ""
+
+#: src/prefs.js:21
+msgid "Recolor the privacy indicators"
+msgstr ""
+
+#: src/prefs.js:26
+msgid "Screen Sharing Indicator"
+msgstr ""
+
+#: src/prefs.js:27
+msgid "Recolor the screen sharing indicator"
+msgstr ""
+
+#: src/prefs.js:32
+msgid "Screen Recording Indicator"
+msgstr ""
+
+#: src/prefs.js:33
+msgid "Recolor the screen recording indicator"
+msgstr ""
+
+#: src/prefs.js:38
+msgid "Blur"
+msgstr ""
+
+#: src/prefs.js:40
+msgid ""
+"Apply blur to the screen sharing and recording indicators; this setting only "
+"works if the indicators are recolored"
+msgstr ""

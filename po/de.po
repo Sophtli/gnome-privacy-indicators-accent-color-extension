@@ -1,0 +1,59 @@
+# German translation for Privacy Indicators Accent Color
+# Copyright (C) 2024-2025 Sophtli
+# This file is distributed under the same license as the Privacy Indicators Accent Color package.
+# Sophtli <mail@sopht.li>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Privacy Indicators Accent Color\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-11 23:45+0100\n"
+"PO-Revision-Date: 2025-02-11 23:46+0100\n"
+"Last-Translator: Sophtli <mail@sopht.li>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gtranslator 47.1\n"
+
+#: src/prefs.js:15
+msgid "Appearance"
+msgstr "Erscheinungsbild"
+
+#: src/prefs.js:20
+msgid "Privacy Indicators"
+msgstr "Privatsphäre-Indikatoren"
+
+#: src/prefs.js:21
+msgid "Recolor the privacy indicators"
+msgstr "Die Privatsphäre-Indikatoren umfärben"
+
+#: src/prefs.js:26
+msgid "Screen Sharing Indicator"
+msgstr "Bildschirmfreigabe-Indikator"
+
+#: src/prefs.js:27
+msgid "Recolor the screen sharing indicator"
+msgstr "Den Bildschirmfreigabe-Indikator umfärben"
+
+#: src/prefs.js:32
+msgid "Screen Recording Indicator"
+msgstr "Bildschirmaufnahme-Indikator"
+
+#: src/prefs.js:33
+msgid "Recolor the screen recording indicator"
+msgstr "Den Bildschirmaufnahme-Indikator umfärben"
+
+#: src/prefs.js:38
+msgid "Blur"
+msgstr "Blur"
+
+#: src/prefs.js:40
+msgid ""
+"Apply blur to the screen sharing and recording indicators; this setting only "
+"works if the indicators are recolored"
+msgstr ""
+"Blur auf die Indikatoren für die Bildschirmfreigabe und -aufnahme anwenden; "
+"diese Einstellung funktioniert nur, wenn die Indikatoren umgefärbt sind"
