@@ -5,7 +5,7 @@ Apply the system accent color to privacy indicators (e.g., microphone) and scree
 # Package
 
 ```
-gnome-extensions pack src --podir=../po --extra-source="../LICENSE"
+gnome-extensions pack src --podir=../po --extra-source=../LICENSE
 ```
 
 # Translation
@@ -19,7 +19,7 @@ xgettext --from-code=UTF-8 --package-name="Privacy Indicators Accent Color" --co
 ## Create new .po file
 
 ```
-msginit --locale de
+msginit --locale=de
 ```
 
 ## Update .po file
