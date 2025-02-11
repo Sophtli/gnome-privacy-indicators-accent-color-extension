@@ -1,5 +1,5 @@
 # German translation for Privacy Indicators Accent Color
-# Copyright (C) 2024-2025 Sophtli
+# Copyright (C) 2025 Sophtli
 # This file is distributed under the same license as the Privacy Indicators Accent Color package.
 # Sophtli <mail@sopht.li>, 2025.
 #
