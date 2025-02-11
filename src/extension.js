@@ -25,19 +25,19 @@ export default class PrivacyIndicatorsAccentColor extends Extension {
     // register listeners
     this._onPrivacyIndicatorsChangedID = this._settings.connect(
       "changed::" + PRIVACY_INDICATORS,
-      this._onPrivacyIndicatorsChanged.bind(this),
+      this._onPrivacyIndicatorsChanged.bind(this)
     );
     this._onScreenSharingIndicatorChangedID = this._settings.connect(
       "changed::" + SCREEN_SHARING_INDICATOR,
-      this._onScreenSharingIndicatorChanged.bind(this),
+      this._onScreenSharingIndicatorChanged.bind(this)
     );
     this._onScreenRecordingIndicatorChangedID = this._settings.connect(
       "changed::" + SCREEN_RECORDING_INDICATOR,
-      this._onScreenRecordingIndicatorChanged.bind(this),
+      this._onScreenRecordingIndicatorChanged.bind(this)
     );
     this._onBlurChangedID = this._settings.connect(
       "changed::" + BLUR,
-      this._onBlurChanged.bind(this),
+      this._onBlurChanged.bind(this)
     );
   }
 
@@ -81,21 +81,21 @@ export default class PrivacyIndicatorsAccentColor extends Extension {
   _onPrivacyIndicatorsChanged() {
     this._updateClass(
       this._settings.get_boolean(PRIVACY_INDICATORS),
-      PRIVACY_INDICATORS_CLASS,
+      PRIVACY_INDICATORS_CLASS
     );
   }
 
   _onScreenSharingIndicatorChanged() {
     this._updateClass(
       this._settings.get_boolean(SCREEN_SHARING_INDICATOR),
-      SCREEN_SHARING_INDICATOR_CLASS,
+      SCREEN_SHARING_INDICATOR_CLASS
     );
   }
 
   _onScreenRecordingIndicatorChanged() {
     this._updateClass(
       this._settings.get_boolean(SCREEN_RECORDING_INDICATOR),
-      SCREEN_RECORDING_INDICATOR_CLASS,
+      SCREEN_RECORDING_INDICATOR_CLASS
     );
   }
 
