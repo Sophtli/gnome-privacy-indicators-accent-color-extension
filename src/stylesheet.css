@@ -1,23 +1,76 @@
+/* Privacy */
 .privacy-indicators-accent-color .privacy-indicator {
-  color: -st-accent-color;
+  color: -st-accent-color !important;
 }
 
+/* Screen Sharing */
 .screen-sharing-indicator-accent-color .screen-sharing-indicator {
-  color: -st-accent-fg-color;
-  box-shadow: inset 0 0 0 100px -st-accent-color;
+  color: -st-accent-fg-color !important;
+  box-shadow: inset 0 0 0 100px -st-accent-color !important;
 }
 
+.screen-sharing-indicator-accent-color .screen-sharing-indicator:hover,
+.screen-sharing-indicator-accent-color .screen-sharing-indicator:focus {
+  box-shadow: inset 0 0 0 100px st-darken(-st-accent-color, 5%) !important;
+}
+
+.screen-sharing-indicator-accent-color .screen-sharing-indicator:active,
+.screen-sharing-indicator-accent-color .screen-sharing-indicator:checked {
+  box-shadow: inset 0 0 0 100px st-darken(-st-accent-color, 10%) !important;
+}
+
+/* Screen Recording */
 .screen-recording-indicator-accent-color .screen-recording-indicator {
-  color: -st-accent-fg-color;
-  box-shadow: inset 0 0 0 100px -st-accent-color;
+  color: -st-accent-fg-color !important;
+  box-shadow: inset 0 0 0 100px -st-accent-color !important;
+}
+
+.screen-recording-indicator-accent-color .screen-recording-indicator:hover,
+.screen-recording-indicator-accent-color .screen-recording-indicator:focus {
+  box-shadow: inset 0 0 0 100px st-darken(-st-accent-color, 5%) !important;
+}
+
+.screen-recording-indicator-accent-color .screen-recording-indicator:active,
+.screen-recording-indicator-accent-color .screen-recording-indicator:checked {
+  box-shadow: inset 0 0 0 100px st-darken(-st-accent-color, 10%) !important;
+}
+
+/* Blur Screen Sharing */
+.screen-sharing-indicator-accent-color.screen-sharing-recording-indicators-blur
+.screen-sharing-indicator {
+  box-shadow: inset 0 0 10px 1px -st-accent-color !important;
 }
 
 .screen-sharing-indicator-accent-color.screen-sharing-recording-indicators-blur
-  .screen-sharing-indicator {
-  box-shadow: inset 0 0 10px 1px -st-accent-color;
+.screen-sharing-indicator:hover,
+.screen-sharing-indicator-accent-color.screen-sharing-recording-indicators-blur
+.screen-sharing-indicator:focus {
+  box-shadow: inset 0 0 10px 1px st-darken(-st-accent-color, 5%) !important;
+}
+
+.screen-sharing-indicator-accent-color.screen-sharing-recording-indicators-blur
+.screen-sharing-indicator:active,
+.screen-sharing-indicator-accent-color.screen-sharing-recording-indicators-blur
+.screen-sharing-indicator:checked {
+  box-shadow: inset 0 0 10px 1px st-darken(-st-accent-color, 10%) !important;
+}
+
+/* Blur Screen Recording */
+.screen-recording-indicator-accent-color.screen-sharing-recording-indicators-blur
+.screen-recording-indicator {
+  box-shadow: inset 0 0 10px 1px -st-accent-color !important;
 }
 
 .screen-recording-indicator-accent-color.screen-sharing-recording-indicators-blur
-  .screen-recording-indicator {
-  box-shadow: inset 0 0 10px 1px -st-accent-color;
+.screen-recording-indicator:hover,
+.screen-recording-indicator-accent-color.screen-sharing-recording-indicators-blur
+.screen-recording-indicator:focus {
+  box-shadow: inset 0 0 10px 1px st-darken(-st-accent-color, 5%) !important;
+}
+
+.screen-recording-indicator-accent-color.screen-sharing-recording-indicators-blur
+.screen-recording-indicator:active,
+.screen-recording-indicator-accent-color.screen-sharing-recording-indicators-blur
+.screen-recording-indicator:checked {
+  box-shadow: inset 0 0 10px 1px st-darken(-st-accent-color, 10%) !important;
 }
